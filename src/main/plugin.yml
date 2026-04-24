@@ -1,0 +1,13 @@
+name: Parkour
+version: '1.0.0'
+main: ignluc4s.parkour.Parkour
+api-version: '1.16'
+author: ignLuc4s
+softdepend: [DecentHolograms]
+description: A parkour plugin with checkpoints, time tracking, and MySQL storage
+
+commands:
+  parkour:
+    description: Main parkour command
+    usage: /<command> <create|checkpoint|finish|restart|gui> [args]
+    aliases: [pk]
