@@ -1,0 +1,38 @@
+# Parkour Plugin Configuration
+
+# MySQL Database Settings
+database:
+  host: "localhost"
+  port: 3306
+  database: "minecraft"
+  username: "root"
+  password: "password"
+  
+# Messages
+messages:
+  prefix: "&8[&bParkour&8] &7"
+  parkour-created: "&aStarted creating parkour '&e{parkour}&a'. Stand at the start point and run &e/parkour checkpoint {parkour}"
+  checkpoint-added: "&aCheckpoint &e#{number} &aadded to parkour '&e{parkour}&a'"
+  parkour-finished: "&aParkour '&e{parkour}&a' has been saved with &e{checkpoints} &acheckpoints!"
+  parkour-not-found: "&cParkour '&e{parkour}&c' not found in creation mode!"
+  parkour-already-exists: "&cParkour '&e{parkour}&c' already exists!"
+  parkour-started: "&aStarted parkour '&e{parkour}&a'! Time is now tracking."
+  checkpoint-reached: "&aCheckpoint &e#{number} &areached!"
+  parkour-completed: "&a&lCongratulations! &aYou completed '&e{parkour}&a' in &e{time}&a!"
+  restarted: "&aReturned to checkpoint &e#{number}&a!"
+  no-active-parkour: "&cYou are not currently in a parkour!"
+  no-checkpoint: "&cYou haven't reached any checkpoints yet!"
+  parkour-deleted: "&aParkour '&e{parkour}&a' has been deleted!"
+  no-permission: "&cYou don't have permission to do that!"
+  
+# Hologram Settings
+holograms:
+  start:
+    - "&b&lSTART"
+    - "&7{parkour}"
+  checkpoint:
+    - "&e&lCHECKPOINT #{number}"
+    - "&7{parkour}"
+  finish:
+    - "&a&lFINISH"
+    - "&7{parkour}"
